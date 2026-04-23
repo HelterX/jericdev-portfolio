@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Shopify Developer & Front-End Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__logo">YN<span>.</span></div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg-text">SHOPIFY</div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Available for Freelance</p>
+      <h1 class="hero__title">
+        Shopify Developer<br>
+        <em>& Front-End</em><br>
+        Designer.
+      </h1>
+      <p class="hero__sub">I build beautiful, high-converting Shopify stores and static websites — blending clean code with thoughtful design.</p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero__badge">
+      <div class="badge__ring">
+        <svg viewBox="0 0 200 200" class="badge__svg">
+          <path id="circle-text" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
+          <text>
+            <textPath href="#circle-text" startOffset="0%">
+              Shopify Expert · Front-End · VA · Canva · HTML · CSS ·&nbsp;
+            </textPath>
+          </text>
+        </svg>
+        <span class="badge__icon">✦</span>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image-col">
+          <div class="about__img-frame">
+            <div class="about__img-placeholder">
+              <span>Your Photo</span>
+            </div>
+            <div class="about__img-accent"></div>
+          </div>
+          <div class="about__stat-card">
+            <span class="stat__num">3+</span>
+            <span class="stat__label">Years Experience</span>
+          </div>
+        </div>
+        <div class="about__text-col">
+          <p class="section__eyebrow">About Me</p>
+          <h2 class="section__title">Crafting Digital Experiences That Convert</h2>
+          <p class="about__body">Hi, I'm <strong>Your Name</strong> — a Shopify Virtual Assistant and Front-End Designer passionate about helping businesses grow online. I specialize in building and customizing Shopify stores, coding clean HTML/CSS/JS websites, and creating visually compelling designs using Canva.</p>
+          <p class="about__body">From product listing and theme customization to lead generation and customer service, I bring both technical skill and business understanding to every project.</p>
+          <div class="about__tags">
+            <span class="tag">Shopify VA</span>
+            <span class="tag">Theme Dev</span>
+            <span class="tag">HTML/CSS/JS</span>
+            <span class="tag">Canva</span>
+            <span class="tag">Customer Service</span>
+            <span class="tag">Lead Generation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <p class="section__eyebrow center">What I Do</p>
+      <h2 class="section__title center">My Skills & Services</h2>
+      <div class="skills__grid">
+
+        <div class="skill-card">
+          <div class="skill-card__icon">🛍️</div>
+          <h3>Shopify Development</h3>
+          <p>Theme customization, store setup, product listings, and Shopify VA tasks — fully managed.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">💻</div>
+          <h3>Front-End Design</h3>
+          <p>Clean, responsive websites built with HTML, CSS, and JavaScript from scratch.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">🎨</div>
+          <h3>Canva & Graphic Design</h3>
+          <p>Social media graphics, banners, product images, and branded visual content.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">✍️</div>
+          <h3>Blog & Content Writing</h3>
+          <p>SEO-friendly blogs and product descriptions that engage readers and rank on Google.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">🔍</div>
+          <h3>Research & Lead Generation</h3>
+          <p>Market research, competitor analysis, and targeted lead generation for your business.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">🤝</div>
+          <h3>Customer Service</h3>
+          <p>Professional customer support — email handling, inquiries, and order management.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <p class="section__eyebrow center">Portfolio</p>
+      <h2 class="section__title center">Selected Work</h2>
+      <div class="projects__grid">
+
+        <div class="project-card">
+          <div class="project-card__img">
+            <div class="project-card__img-placeholder">Project Screenshot</div>
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--small">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Shopify Store</span>
+            <h3>Project Name Here</h3>
+            <p>Brief description of what you built and the results achieved for the client.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__img">
+            <div class="project-card__img-placeholder">Project Screenshot</div>
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--small">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Front-End Website</span>
+            <h3>Project Name Here</h3>
+            <p>Brief description of what you built and the results achieved for the client.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__img">
+            <div class="project-card__img-placeholder">Project Screenshot</div>
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--small">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Canva Design</span>
+            <h3>Project Name Here</h3>
+            <p>Brief description of what you built and the results achieved for the client.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <p class="section__eyebrow center">Let's Work Together</p>
+        <h2 class="section__title center">Start a Project</h2>
+        <p class="contact__sub">Have a project in mind? I'd love to hear about it. Send me a message and I'll get back to you within 24 hours.</p>
+        <div class="contact__form">
+          <div class="form__row">
+            <input type="text" class="form__input" placeholder="Your Name" />
+            <input type="email" class="form__input" placeholder="Your Email" />
+          </div>
+          <input type="text" class="form__input" placeholder="Subject" />
+          <textarea class="form__input form__textarea" placeholder="Tell me about your project..."></textarea>
+          <button class="btn btn--primary btn--full">Send Message ✦</button>
+        </div>
+        <div class="contact__links">
+          <a href="mailto:you@email.com">📧 you@email.com</a>
+          <a href="#">💼 LinkedIn</a>
+          <a href="#">🐦 Twitter / X</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 <strong>Your Name</strong> — Shopify Developer & Front-End Designer</p>
+    <p class="footer__sub">Built with HTML, CSS & JS · Hosted on Cloudflare Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
