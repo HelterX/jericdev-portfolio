@@ -151,9 +151,53 @@
     <div class="container">
       <p class="section__eyebrow center">Portfolio</p>
       <h2 class="section__title center">Selected Work</h2>
-      <div class="projects__grid">
+      <div class="projects__grid" id="projectsGrid">
+
+        <!-- VISIBLE: First 3 projects -->
+        <div class="project-card">
+          <div class="project-card__img">
+            <img src="images/ae.png" alt="Allegedly Enlightened Shopify Store Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://allegedly-enlightened.com/" class="btn btn--small">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Shopify Store</span>
+            <h3>Allegedly Enlightened</h3>
+            <p>Brief description of what you built and the results achieved for the client.</p>
+          </div>
+        </div>
 
         <div class="project-card">
+          <div class="project-card__img">
+            <img src="images/kc.png" alt="Khun Camp Website Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://khuncamp.com/" class="btn btn--small">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Front-End Website</span>
+            <h3>Khun Camp Website</h3>
+            <p>Brief description of what you built and the results achieved for the client.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__img">
+            <img src="images/tp.png" alt="Tamco Paint International Shopify Store Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://tamcopaint.com/" class="btn btn--small">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Shopify Store</span>
+            <h3>Tamco Paint International</h3>
+            <p>Brief description of what you built and the results achieved for the client.</p>
+          </div>
+        </div>
+
+        <!-- HIDDEN: Add more projects here -->
+        <div class="project-card project-card--hidden">
           <div class="project-card__img">
             <div class="project-card__img-placeholder">Project Screenshot</div>
             <div class="project-card__overlay">
@@ -162,12 +206,12 @@
           </div>
           <div class="project-card__info">
             <span class="project-card__type">Shopify Store</span>
-            <h3>Project Name Here</h3>
+            <h3>Project Four</h3>
             <p>Brief description of what you built and the results achieved for the client.</p>
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card project-card--hidden">
           <div class="project-card__img">
             <div class="project-card__img-placeholder">Project Screenshot</div>
             <div class="project-card__overlay">
@@ -176,12 +220,12 @@
           </div>
           <div class="project-card__info">
             <span class="project-card__type">Front-End Website</span>
-            <h3>Project Name Here</h3>
+            <h3>Project Five</h3>
             <p>Brief description of what you built and the results achieved for the client.</p>
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card project-card--hidden">
           <div class="project-card__img">
             <div class="project-card__img-placeholder">Project Screenshot</div>
             <div class="project-card__overlay">
@@ -189,32 +233,38 @@
             </div>
           </div>
           <div class="project-card__info">
-            <span class="project-card__type">Canva Design</span>
-            <h3>Project Name Here</h3>
+            <span class="project-card__type">Shopify Store</span>
+            <h3>Project Six</h3>
             <p>Brief description of what you built and the results achieved for the client.</p>
           </div>
         </div>
 
       </div>
+
+      <!-- Toggle Button -->
+      <div class="projects__footer" id="projectsFooter">
+        <button class="btn btn--ghost" id="toggleProjects">View All Projects ↓</button>
+      </div>
+
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact section" id="contact">
-    <div class="container">
-      <div class="contact__inner">
-        <p class="section__eyebrow center">Let's Work Together</p>
-        <h2 class="section__title center">Start a Project</h2>
-        <p class="contact__sub">Have a project in mind? I'd love to hear about it. Send me a message and I'll get back to you within 24 hours.</p>
-        <div class="contact__form">
-          <div class="form__row">
-            <input type="text" class="form__input" placeholder="Your Name" />
-            <input type="email" class="form__input" placeholder="Your Email" />
-          </div>
-          <input type="text" class="form__input" placeholder="Subject" />
-          <textarea class="form__input form__textarea" placeholder="Tell me about your project..."></textarea>
-          <button class="btn btn--primary btn--full">Send Message ✦</button>
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="contact__inner">
+      <p class="section__eyebrow center">Let's Work Together</p>
+      <h2 class="section__title center">Start a Project</h2>
+      <p class="contact__sub">Have a project in mind? I'd love to hear about it. Send me a message and I'll get back to you within 24 hours.</p>
+      <div class="contact__form" id="contactForm">
+        <div class="form__row">
+          <input type="text" id="name" class="form__input" placeholder="Your Name" />
+          <input type="email" id="email" class="form__input" placeholder="Your Email" />
         </div>
+        <input type="text" id="subject" class="form__input" placeholder="Subject" />
+        <textarea id="message" class="form__input form__textarea" placeholder="Tell me about your project..."></textarea>
+        <button class="btn btn--primary btn--full" id="sendBtn">Send Message ✦</button>
+      </div>
         <div class="contact__links">
           <a href="mailto:tabbogajeric0811@gmail.com">📧 tabbogajeric0811@gmail.com</a>
           <a href="https://www.linkedin.com/in/jerictabboga/">💼 LinkedIn</a>
@@ -226,7 +276,7 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 <strong>Jeric Tabboga</strong> — Shopify Developer & Front-End Designer</p>
+    <p>© 2026 <strong>Jeric Tabboga</strong> Shopify Developer & Front-End Designer</p>
     <p class="footer__sub">Built with HTML, CSS & JS · Hosted on Cloudflare Pages</p>
   </footer>
 
