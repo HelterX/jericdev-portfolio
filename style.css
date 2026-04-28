@@ -745,3 +745,14 @@ ul { list-style: none; }
   object-position: top; /* shows the top of the image — change to 'center' if you prefer */
   display: block;
 }
+
+.contact__links a i {
+  font-size: 1.1rem;
+  margin-right: 6px;
+  color: var(--gold);
+  transition: color var(--transition);
+}
+
+.contact__links a:hover i {
+  color: var(--cream);
+}
