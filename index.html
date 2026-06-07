@@ -37,11 +37,11 @@
     <div class="hero__content">
       <p class="hero__eyebrow">Available for Freelance</p>
       <h1 class="hero__title">
-        Shopify Developer<br>
-        <em>& Front-End</em><br>
-        Designer.
+        Web Developer<br>
+        <em>& AI Builder</em><br>
+        for Hire.
       </h1>
-      <p class="hero__sub">I build beautiful, high-converting Shopify stores and static websites, blending clean code with thoughtful design.</p>
+      <p class="hero__sub">I build websites from scratch, create AI-powered automations and agents, and develop high-converting Shopify stores — all powered by clean code and modern tools.</p>
       <div class="hero__actions">
         <a href="#projects" class="btn btn--primary">View My Work</a>
         <a href="#contact" class="btn btn--ghost">Get in Touch</a>
@@ -54,7 +54,7 @@
           <path id="circle-text" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
           <text>
             <textPath href="#circle-text" startOffset="0%">
-              Shopify Expert · Front-End · Design
+              AI Agents · Shopify · Front-End · Automations · Web Dev ·&nbsp;
             </textPath>
           </text>
         </svg>
@@ -86,15 +86,15 @@
         <div class="about__text-col">
           <p class="section__eyebrow">About Me</p>
           <h2 class="section__title">Crafting Digital Experiences That Convert</h2>
-          <p class="about__body">Hi, I'm <strong>Jeric</strong> — a Shopify Virtual Assistant and Front-End Designer passionate about helping businesses grow online. I specialize in building and customizing Shopify stores, coding clean HTML/CSS/JS websites, and creating visually compelling designs using Canva.</p>
-          <p class="about__body">From product listing and theme customization to lead generation and customer service, I bring both technical skill and business understanding to every project.</p>
+          <p class="about__body">Hi, I'm <strong>Jeric</strong> — a web developer and AI builder who helps businesses and creators get more done with technology. I build websites from the ground up, craft agentic workflows using Claude AI, automate repetitive tasks, and develop high-converting Shopify stores.</p>
+          <p class="about__body">Whether you need a clean front-end site, a custom AI agent, a Shopify store, or a workflow that runs itself — I combine technical skill with practical problem-solving to deliver real results.</p>
           <div class="about__tags">
-            <span class="tag">Shopify VA</span>
-            <span class="tag">Theme Dev</span>
+            <span class="tag">Web Dev</span>
+            <span class="tag">Agentic Coding</span>
+            <span class="tag">Shopify</span>
+            <span class="tag">Automations</span>
             <span class="tag">HTML/CSS/JS</span>
-            <span class="tag">Canva</span>
-            <span class="tag">Customer Service</span>
-            <span class="tag">Lead Generation</span>
+            <span class="tag">Claude AI</span>
           </div>
         </div>
       </div>
@@ -109,39 +109,39 @@
       <div class="skills__grid">
 
         <div class="skill-card">
-          <div class="skill-card__icon">🛍️</div>
-          <h3>Shopify Development</h3>
-          <p>Theme customization, store setup, product listings, and Shopify VA tasks — fully managed.</p>
+          <div class="skill-card__icon">💻</div>
+          <h3>Web Dev / Front-End</h3>
+          <p>Responsive, pixel-perfect websites built from scratch with HTML, CSS, and JavaScript — no templates, all custom.</p>
         </div>
 
         <div class="skill-card">
-          <div class="skill-card__icon">💻</div>
-          <h3>Front-End Design</h3>
-          <p>Clean, responsive websites built with HTML, CSS, and JavaScript from scratch.</p>
+          <div class="skill-card__icon">🤖</div>
+          <h3>Agentic Coding</h3>
+          <p>Building AI agents and agentic workflows using Claude — from coding assistants to multi-step autonomous tools.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">🛍️</div>
+          <h3>Shopify Development</h3>
+          <p>Store setup, theme customization, product listings, and full Shopify VA management — ready to sell.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">⚙️</div>
+          <h3>Workflow Automations</h3>
+          <p>Automating repetitive tasks and business processes — saving time and reducing manual work with smart scripts and tools.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">🏗️</div>
+          <h3>Website Builder</h3>
+          <p>Full websites designed and built from the ground up — layout, styling, interactivity, and deployment all covered.</p>
         </div>
 
         <div class="skill-card">
           <div class="skill-card__icon">🎨</div>
-          <h3>Canva & Graphic Design</h3>
-          <p>Social media graphics, banners, product images, and branded visual content.</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-card__icon">✍️</div>
-          <h3>Blog & Content Writing</h3>
-          <p>SEO-friendly blogs and product descriptions that engage readers and rank on Google.</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-card__icon">🔍</div>
-          <h3>Research & Lead Generation</h3>
-          <p>Market research, competitor analysis, and targeted lead generation for your business.</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-card__icon">🤝</div>
-          <h3>Customer Service</h3>
-          <p>Professional customer support — email handling, inquiries, and order management.</p>
+          <h3>Design & Canva</h3>
+          <p>Clean UI design, social media graphics, banners, and branded visuals that look professional and on-brand.</p>
         </div>
 
       </div>
@@ -153,10 +153,18 @@
     <div class="container">
       <p class="section__eyebrow center">Portfolio</p>
       <h2 class="section__title center">Selected Work</h2>
+
+      <div class="projects__filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="ai">AI / Automation</button>
+        <button class="filter-btn" data-filter="shopify">Shopify</button>
+      </div>
+
       <div class="projects__grid" id="projectsGrid">
 
         <!-- VISIBLE: First 3 projects -->
-        <div class="project-card">
+        <div class="project-card" data-category="shopify">
           <div class="project-card__img">
             <img src="images/ae.png" alt="Allegedly Enlightened Shopify Store Screenshot">
             <div class="project-card__overlay">
@@ -164,13 +172,13 @@
             </div>
           </div>
           <div class="project-card__info">
-            <span class="project-card__type">Client's Shopify Store</span>
+            <span class="project-card__type">Shopify Store</span>
             <h3>Allegedly Enlightened</h3>
             <p>Built and customized the full Shopify store theme setup, product listings, store content, and layout optimization to create a clean, conversion-focused shopping experience.</p>
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-category="web">
           <div class="project-card__img">
             <img src="images/kc.png" alt="Khun Camp Website Screenshot">
             <div class="project-card__overlay">
@@ -184,7 +192,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-category="web">
           <div class="project-card__img">
             <img src="images/porchik.png" alt="Personal Project Website Screenshot">
             <div class="project-card__overlay">
@@ -198,7 +206,21 @@
           </div>
         </div>
 
-        <!-- HIDDEN: Add more projects here 
+        <div class="project-card" data-category="ai">
+          <div class="project-card__img">
+            <img src="images/jericbot.png" alt="JericBot AI Chatbot Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://helterx.github.io/JericBot" class="btn btn--small" target="_blank">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">AI Chatbot</span>
+            <h3>JericBot</h3>
+            <p>A personal AI assistant chatbot that answers questions about Jeric's services, skills, pricing, and projects — built from scratch with HTML, CSS, and JavaScript.</p>
+          </div>
+        </div>
+
+        <!-- HIDDEN: Add more projects here
         <div class="project-card project-card--hidden">
           <div class="project-card__img">
             <img src="images/khunshawn.png" alt="Khun Shawn Website Screenshot">
@@ -287,7 +309,7 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 <strong>Jeric Tabboga</strong> Shopify Developer & Front-End Designer</p>
+    <p>© 2026 <strong>Jeric Tabboga</strong> — Web Developer & AI Builder</p>
     <p class="footer__sub">Built with HTML, CSS & JS · Hosted on Cloudflare Pages</p>
   </footer>
 

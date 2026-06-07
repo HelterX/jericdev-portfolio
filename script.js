@@ -119,6 +119,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // =============================================
+//  PROJECT FILTERS
+// =============================================
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.dataset.filter;
+
+    projectCards.forEach(card => {
+      const match = filter === 'all' || card.dataset.category === filter;
+      if (match) {
+        card.classList.remove('hidden');
+        card.classList.add('fade-in');
+        card.addEventListener('animationend', () => card.classList.remove('fade-in'), { once: true });
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  });
+});
+
+// =============================================
 //  PROJECTS TOGGLE
 // =============================================
 const toggleBtn = document.getElementById('toggleProjects');
