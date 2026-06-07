@@ -29,7 +29,21 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="nav__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+    <button class="btn btn--primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});document.getElementById('mobileMenu').classList.remove('open')">Hire Me</button>
+  </div>
 
   <!-- HERO -->
   <section class="hero">
@@ -133,9 +147,9 @@
         </div>
 
         <div class="skill-card">
-          <div class="skill-card__icon">🏗️</div>
-          <h3>Website Builder</h3>
-          <p>Full websites designed and built from the ground up — layout, styling, interactivity, and deployment all covered.</p>
+          <div class="skill-card__icon">🚀</div>
+          <h3>SEO & Performance</h3>
+          <p>Optimizing websites for speed, search rankings, and better visibility — so your site gets found and loads fast.</p>
         </div>
 
         <div class="skill-card">
