@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeric's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__logo">Jeric Designs<span>.</span></div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+    <button class="btn btn--primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});document.getElementById('mobileMenu').classList.remove('open')">Hire Me</button>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg-text">Jeric</div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Available for Freelance</p>
+      <h1 class="hero__title">
+        Web Developer<br>
+        <em>& AI Builder</em><br>
+        for Hire.
+      </h1>
+      <p class="hero__sub">I build websites from scratch, create AI-powered automations and agents, and develop high-converting Shopify stores — all powered by clean code and modern tools.</p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        <a href="files/Jeric_Tabboga_Resume.pdf" download class="btn btn--ghost">Download CV ↓</a>
+      </div>
+    </div>
+    <div class="hero__badge">
+      <div class="badge__ring">
+        <svg viewBox="0 0 200 200" class="badge__svg">
+          <path id="circle-text" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
+          <text>
+            <textPath href="#circle-text" startOffset="0%">
+              AI Agents · Shopify · Front-End · Automations · Web Dev ·&nbsp;
+            </textPath>
+          </text>
+        </svg>
+        <span class="badge__icon">✦</span>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image-col">
+          <div class="about__img-frame">
+            <div class="about__img-placeholder">
+              <img src="images/dp.png" alt="Your Name" class="about__img">
+            </div>
+            <div class="about__img-accent"></div>
+          </div>
+          <div class="about__stat-card">
+            <span class="stat__num">4+</span>
+            <span class="stat__label">Years Experience</span>
+          </div>
+        </div>
+        <div class="about__text-col">
+          <p class="section__eyebrow">About Me</p>
+          <h2 class="section__title">Crafting Digital Experiences That Convert</h2>
+          <p class="about__body">Hi, I'm <strong>Jeric</strong> — a web developer and AI builder who helps businesses and creators get more done with technology. I build websites from the ground up, craft agentic workflows using Claude AI, automate repetitive tasks, and develop high-converting Shopify stores.</p>
+          <p class="about__body">Whether you need a clean front-end site, a custom AI agent, a Shopify store, or a workflow that runs itself — I combine technical skill with practical problem-solving to deliver real results.</p>
+          <div class="about__tags">
+            <span class="tag">Web Dev</span>
+            <span class="tag">Agentic Coding</span>
+            <span class="tag">Shopify</span>
+            <span class="tag">Automations</span>
+            <span class="tag">HTML/CSS/JS</span>
+            <span class="tag">Claude AI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <p class="section__eyebrow center">What I Do</p>
+      <h2 class="section__title center">My Skills & Services</h2>
+      <div class="skills__grid">
+
+        <div class="skill-card">
+          <div class="skill-card__icon">💻</div>
+          <h3>Web Dev / Front-End</h3>
+          <p>Responsive, pixel-perfect websites built from scratch with HTML, CSS, and JavaScript — no templates, all custom.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">🤖</div>
+          <h3>Agentic Coding</h3>
+          <p>Building AI agents and agentic workflows using Claude — from coding assistants to multi-step autonomous tools.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">🛍️</div>
+          <h3>Shopify Development</h3>
+          <p>Store setup, theme customization, product listings, and full Shopify VA management — ready to sell.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">⚙️</div>
+          <h3>Workflow Automations</h3>
+          <p>Automating repetitive tasks and business processes — saving time and reducing manual work with smart scripts and tools.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">🚀</div>
+          <h3>SEO & Performance</h3>
+          <p>Optimizing websites for speed, search rankings, and better visibility — so your site gets found and loads fast.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">🎨</div>
+          <h3>Design & Canva</h3>
+          <p>Clean UI design, social media graphics, banners, and branded visuals that look professional and on-brand.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <p class="section__eyebrow center">Portfolio</p>
+      <h2 class="section__title center">Selected Work</h2>
+
+      <div class="projects__filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="ai">AI / Automation</button>
+        <button class="filter-btn" data-filter="shopify">Shopify</button>
+      </div>
+
+      <div class="projects__grid" id="projectsGrid">
+
+        <!-- VISIBLE: First 3 projects -->
+        <div class="project-card" data-category="shopify">
+          <div class="project-card__img">
+            <img src="images/ae.png" alt="Allegedly Enlightened Shopify Store Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://allegedly-enlightened.com/" class="btn btn--small">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Shopify Store</span>
+            <h3>Allegedly Enlightened</h3>
+            <p>Built and customized the full Shopify store theme setup, product listings, store content, and layout optimization to create a clean, conversion-focused shopping experience.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-card__img">
+            <img src="images/kc.png" alt="Khun Camp Website Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://khuncamp.com/" class="btn btn--small">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Client's Front-End Website</span>
+            <h3>Khun Camp Website</h3>
+            <p>Developed a responsive front-end website from scratch using HTML, CSS, and JavaScript. Focused on clean design, smooth navigation, and mobile-friendly layout.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-card__img">
+            <img src="images/porchik.png" alt="Personal Project Website Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://github.com/HelterX/Online-Ordering-System" class="btn btn--small">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Front-End Ordering System</span>
+            <h3>PorChick Ordering System</h3>
+            <p>Designed a front-page graphic layout concept during the 2019 pandemic, aimed at enabling seamless online ordering so customers could safely shop from home.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ai">
+          <div class="project-card__img">
+            <img src="images/Resume Screener.png" alt="Resume Screener AI Tool Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://helterx.github.io/resume-screener" class="btn btn--small" target="_blank">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">AI Tool</span>
+            <h3>Resume Screener</h3>
+            <p>An AI-powered tool that compares your resume against a job description — giving you an instant match score, matched & missing keywords, and tips to improve your chances.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ai">
+          <div class="project-card__img">
+            <img src="images/jericbot.png" alt="JericBot AI Chatbot Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://helterx.github.io/JericBot" class="btn btn--small" target="_blank">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">AI Chatbot</span>
+            <h3>JericBot</h3>
+            <p>A personal AI assistant chatbot that answers questions about Jeric's services, skills, pricing, and projects — built from scratch with HTML, CSS, and JavaScript.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-card__img">
+            <img src="images/glow-aesthetics.png" alt="Glow Aesthetics Med Spa Website Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://github.com/HelterX/glow-aesthetics" class="btn btn--small" target="_blank">View Project ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Front-End Website</span>
+            <h3>Glow Aesthetics</h3>
+            <p>A luxury med spa website built with HTML, CSS, and JavaScript — featuring smooth scroll effects, a gold cursor trail, and animated counters for an elegant, high-end feel.</p>
+          </div>
+        </div>
+
+        <!-- HIDDEN: Add more projects here
+        <div class="project-card project-card--hidden">
+          <div class="project-card__img">
+            <img src="images/khunshawn.png" alt="Khun Shawn Website Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://khun-shawn.com/" class="btn btn--small">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Client's Front-End Website</span>
+            <h3>Khun Shawn Website</h3>
+            <p>Managed client communications and appointment scheduling to keep operations running smoothly. Developed a responsive front-end website from scratch using HTML, CSS, and JavaScript, focused on clean design and seamless user experience.</p>
+          </div>
+        </div>
+
+        <div class="project-card project-card--hidden">
+          <div class="project-card__img">
+            <img src="images/porchik.png" alt="Personal Project Website Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://github.com/HelterX/Online-Ordering-System" class="btn btn--small">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Personal Projects</span>
+            <h3>Porchick Ordering System</h3>
+            <p>Designed the front-page graphic layout for an online ordering system, creating a visually compelling and intuitive interface that guides customers from landing to checkout.</p>
+          </div>
+        </div>
+
+        <div class="project-card project-card--hidden">
+          <div class="project-card__img">
+            <img src="images/Simpleregform.png" alt="Personal Project Registration Form Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://github.com/HelterX/RegistrationForm" class="btn btn--small">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Personal Projects</span>
+            <h3>Registration Form</h3>
+            <p>Built a dynamic registration form using HTML and PHP handling form validation, data submission, and backend processing to securely collect and manage user information.</p>
+          </div>
+        </div>-->
+
+      </div>
+
+      <!-- Toggle Button -->
+      <div class="projects__footer" id="projectsFooter">
+        <button class="btn btn--ghost" id="toggleProjects">View All Projects ↓</button>
+      </div>
+
+    </div>
+  </section>
+
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="contact__inner">
+      <p class="section__eyebrow center">Let's Work Together</p>
+      <h2 class="section__title center">Start a Project</h2>
+      <p class="contact__sub">Have a project in mind? I'd love to hear about it. Send me a message and I'll get back to you within 24 hours.</p>
+      <div class="contact__form" id="contactForm">
+        <div class="form__row">
+          <input type="text" id="name" class="form__input" placeholder="Your Name" />
+          <input type="email" id="email" class="form__input" placeholder="Your Email" />
+        </div>
+        <input type="text" id="subject" class="form__input" placeholder="Subject" />
+        <textarea id="message" class="form__input form__textarea" placeholder="Tell me about your project..."></textarea>
+        <button class="btn btn--primary btn--full" id="sendBtn">Send Message ✦</button>
+      </div>
+      <div class="contact__links">
+        <a href="mailto:tabbogajeric0811@gmail.com">
+          <i class="fa-solid fa-envelope"></i> tabbogajeric0811@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/jerictabboga/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/HelterX" target="_blank">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://wa.me/639293296006" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 <strong>Jeric Tabboga</strong> — Web Developer & AI Builder</p>
+    <p class="footer__sub">Built with HTML, CSS & JS · Hosted on Cloudflare Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
