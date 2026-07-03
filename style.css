@@ -274,11 +274,10 @@ ul { list-style: none; }
    ============================================= */
 .hero {
   position: relative;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 140px 0 80px;
+  padding: 180px 0 120px;
   overflow: hidden;
   background: var(--cream);
 }
