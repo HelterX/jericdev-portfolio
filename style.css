@@ -534,32 +534,54 @@ ul { list-style: none; }
 .skill-card {
   background: var(--white);
   padding: 40px 32px;
-  border-radius: 2px;
-  border: 1px solid transparent;
+  border-radius: 20px;
+  border: 1px solid rgba(201,169,110,0.15);
   transition: var(--transition);
   position: relative;
   overflow: hidden;
+  box-shadow: 0 2px 20px rgba(26,23,20,0.05);
 }
 
 .skill-card::before {
   content: '';
   position: absolute;
-  bottom: 0; left: 0;
-  width: 0; height: 2px;
-  background: var(--gold);
-  transition: width var(--transition);
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.skill-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: radial-gradient(ellipse at top left, rgba(201,169,110,0.06) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity var(--transition);
+  pointer-events: none;
 }
 
 .skill-card:hover {
-  border-color: var(--gold-light);
-  transform: translateY(-4px);
-  box-shadow: var(--shadow);
+  border-color: rgba(201,169,110,0.4);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(201,169,110,0.18), 0 2px 8px rgba(26,23,20,0.06);
 }
-.skill-card:hover::before { width: 100%; }
+.skill-card:hover::before { opacity: 1; }
+.skill-card:hover::after { opacity: 1; }
 
 .skill-card__icon {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, rgba(201,169,110,0.12), rgba(201,169,110,0.04));
+  border-radius: 14px;
+  border: 1px solid rgba(201,169,110,0.2);
 }
 
 .skill-card h3 {
