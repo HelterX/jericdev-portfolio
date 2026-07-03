@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Jeric Tabboga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="pages.css"/>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Jeric Designs<span>.</span></a>
+    <ul class="nav__links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav__cta">Hire Me</a>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="about.html" class="mobile-link">About</a></li>
+      <li><a href="services.html" class="mobile-link">Services</a></li>
+      <li><a href="projects.html" class="mobile-link">Projects</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn--primary">Hire Me</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="section__eyebrow">Portfolio</p>
+      <h1 class="page-hero__title">Selected Work &<br><em>Case Studies</em></h1>
+      <p class="page-hero__sub">A full look at the websites, AI tools, Shopify stores, and GoHighLevel builds I've delivered for clients and personal projects.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" style="background: var(--cream-dark);">
+    <div class="container">
+
+      <div class="projects__filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="ai">AI / Automation</button>
+        <button class="filter-btn" data-filter="shopify">Shopify</button>
+        <button class="filter-btn" data-filter="ghl">GoHighLevel</button>
+      </div>
+
+      <div class="projects__grid" id="projectsGrid">
+
+        <div class="project-card" data-category="ghl">
+          <div class="project-card__img">
+            <img src="images/hans1.webp" alt="Hans Demolition & Excavating Website Screenshot">
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--small" target="_blank">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">GoHighLevel Website</span>
+            <h3>Hans Demolition & Excavating</h3>
+            <p>A bold, professional website for a family-owned demolition and excavation company serving Metro Vancouver since 1993. Built on GoHighLevel with AI-assisted prompts.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ghl">
+          <div class="project-card__img">
+            <img src="images/mkb-ventures-commercial-construction-vancouver.webp" alt="MKB Ventures Commercial Construction Vancouver Website Screenshot">
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--small" target="_blank">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">GoHighLevel Website</span>
+            <h3>MKB Ventures</h3>
+            <p>A commercial construction website for a trusted general contractor serving BC, Alberta, and Saskatchewan. Restaurant renovations, franchise build-outs, and awning services.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ghl">
+          <div class="project-card__img">
+            <img src="images/the-cool-guys-hvac-heating-cooling-vancouver.webp" alt="The Cool Guys HVAC Heating and Cooling Vancouver Website Screenshot">
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--small" target="_blank">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">GoHighLevel Website</span>
+            <h3>The Cool Guys HVAC</h3>
+            <p>A clean, trust-building website for a Red Seal certified HVAC company serving the Lower Mainland since 2009. Services, rebates, reviews, and 24/7 emergency booking.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ghl">
+          <div class="project-card__img">
+            <img src="images/timberwolf-flooring-surrey-langley-bc.webp" alt="Timberwolf Flooring Surrey Langley BC Website Screenshot">
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--small" target="_blank">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">GoHighLevel Website</span>
+            <h3>Timberwolf Flooring</h3>
+            <p>A premium flooring website for a 20-year trade veteran serving Surrey, Langley, and the Lower Mainland. Laminate, vinyl, hardwood, stairs, and feature walls.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="shopify">
+          <div class="project-card__img">
+            <img src="images/ae.png" alt="Allegedly Enlightened Shopify Store Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://allegedly-enlightened.com/" class="btn btn--small" target="_blank">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Shopify Store</span>
+            <h3>Allegedly Enlightened</h3>
+            <p>Built and customized the full Shopify store theme setup, product listings, store content, and layout optimization to create a clean, conversion-focused shopping experience.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-card__img">
+            <img src="images/glow-aesthetics.png" alt="Glow Aesthetics Med Spa Website Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://glow-aesthetics-572.pages.dev/" class="btn btn--small" target="_blank">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Front-End Website</span>
+            <h3>Glow Aesthetics</h3>
+            <p>A modern, elegant website built for a medical spa. Service listings, membership plans, and a clean design that reflects the brand's premium feel.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-card__img">
+            <img src="images/kc.png" alt="Khun Camp Website Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://khuncamp.com/" class="btn btn--small" target="_blank">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Client Front-End Website</span>
+            <h3>Khun Camp Website</h3>
+            <p>Developed a responsive front-end website from scratch using HTML, CSS, and JavaScript. Focused on clean design, smooth navigation, and mobile-friendly layout.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-card__img">
+            <img src="images/porchik.png" alt="PorChick Ordering System Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://github.com/HelterX/Online-Ordering-System" class="btn btn--small" target="_blank">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">Front-End Ordering System</span>
+            <h3>PorChick Ordering System</h3>
+            <p>Designed a front-page graphic layout concept during the 2019 pandemic, aimed at enabling seamless online ordering so customers could safely shop from home.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ai">
+          <div class="project-card__img">
+            <img src="images/Resume Screener.png" alt="Resume Screener AI Tool Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://helterx.github.io/resume-screener" class="btn btn--small" target="_blank">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">AI Tool</span>
+            <h3>Resume Screener</h3>
+            <p>An AI-powered tool that analyzes your resume and gives you an instant quality score, matched keywords, and actionable tips to help you stand out.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ai">
+          <div class="project-card__img">
+            <img src="images/jericbot.png" alt="JericBot AI Chatbot Screenshot">
+            <div class="project-card__overlay">
+              <a href="https://helterx.github.io/JericBot" class="btn btn--small" target="_blank">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__type">AI Chatbot</span>
+            <h3>JericBot</h3>
+            <p>A personal AI assistant chatbot that answers questions about Jeric's services, skills, pricing, and projects. Built from scratch with HTML, CSS, and JavaScript.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="page-cta section">
+    <div class="container center">
+      <p class="section__eyebrow">Like What You See?</p>
+      <h2 class="section__title">Let's Build Yours Next</h2>
+      <p class="page-cta__sub">Have a project in mind? I'd love to hear about it. Let's talk about what we can build together.</p>
+      <div class="page-cta__actions">
+        <a href="contact.html" class="btn btn--primary">Start a Project ✦</a>
+        <a href="services.html" class="btn btn--ghost">View Services</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 <strong>Jeric Tabboga</strong> · Web Developer & AI Builder</p>
+    <p class="footer__sub">Built with HTML, CSS & JS · Hosted on Cloudflare Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -21,14 +21,14 @@
 
   <!-- NAV -->
   <nav class="nav">
-    <div class="nav__logo">Jeric Designs<span>.</span></div>
+    <a href="index.html" class="nav__logo">Jeric Designs<span>.</span></a>
     <ul class="nav__links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button class="nav__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+    <a href="contact.html" class="nav__cta">Hire Me</a>
     <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
@@ -37,12 +37,12 @@
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
     <ul>
-      <li><a href="#about" class="mobile-link">About</a></li>
-      <li><a href="#skills" class="mobile-link">Skills</a></li>
-      <li><a href="#projects" class="mobile-link">Projects</a></li>
-      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="about.html" class="mobile-link">About</a></li>
+      <li><a href="services.html" class="mobile-link">Services</a></li>
+      <li><a href="projects.html" class="mobile-link">Projects</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact</a></li>
     </ul>
-    <button class="btn btn--primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});document.getElementById('mobileMenu').classList.remove('open')">Hire Me</button>
+    <a href="contact.html" class="btn btn--primary">Hire Me</a>
   </div>
 
   <!-- HERO -->
@@ -116,6 +116,9 @@
             <span class="tag">HTML/CSS/JS</span>
             <span class="tag">Claude AI</span>
           </div>
+          <div style="margin-top: 32px;">
+            <a href="about.html" class="btn btn--primary">Read My Full Story ↗</a>
+          </div>
         </div>
       </div>
     </div>
@@ -170,6 +173,9 @@
           <p>Building fast, professional websites on GoHighLevel using AI-assisted prompts. Perfect for local businesses and service providers.</p>
         </div>
 
+      </div>
+      <div style="text-align:center; margin-top: 48px;">
+        <a href="services.html" class="btn btn--primary">View All Services ↗</a>
       </div>
     </div>
   </section>
@@ -379,7 +385,7 @@
 
       <!-- Toggle Button -->
       <div class="projects__footer" id="projectsFooter">
-        <button class="btn btn--ghost" id="toggleProjects">View All Projects ↓</button>
+        <a href="projects.html" class="btn btn--primary">View All Projects ↗</a>
       </div>
 
     </div>
