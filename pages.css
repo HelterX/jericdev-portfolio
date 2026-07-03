@@ -228,6 +228,32 @@
 }
 
 /* =============================================
+   CONTACT PAGE FORM OVERRIDE
+   ============================================= */
+.contact-page__form-col .form__input {
+  background: var(--cream);
+  border: 1.5px solid rgba(201,169,110,0.25);
+  color: var(--ink);
+  border-radius: 10px;
+}
+
+.contact-page__form-col .form__input::placeholder {
+  color: var(--ink-light);
+  opacity: 0.5;
+}
+
+.contact-page__form-col .form__input:focus {
+  border-color: var(--gold);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(201,169,110,0.1);
+}
+
+.contact-page__form-col .btn--primary {
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+/* =============================================
    CONTACT PAGE
    ============================================= */
 .contact-page__grid {
