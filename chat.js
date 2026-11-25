@@ -23,24 +23,23 @@
   root.className = 'chat';
   root.innerHTML = `
     <button class="chat__launcher" type="button" aria-label="Open chat" aria-expanded="false">
-      <span class="chat__launcher-icon chat__launcher-icon--open"><i class="fa-solid fa-comment-dots"></i></span>
-      <span class="chat__launcher-icon chat__launcher-icon--close"><i class="fa-solid fa-xmark"></i></span>
+      <i class="chat__dot" aria-hidden="true"></i>
       <span class="chat__launcher-label">Ask JericBot</span>
+      <span class="chat__launcher-x" aria-hidden="true">Close</span>
     </button>
     <section class="chat__panel" role="dialog" aria-label="Chat with JericBot" aria-hidden="true">
       <header class="chat__head">
-        <div class="chat__avatar"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
         <div class="chat__title">
           <strong>JericBot</strong>
-          <span><i class="chat__dot"></i> AI assistant for Jeric's portfolio</span>
+          <span>AI assistant. Not Jeric himself.</span>
         </div>
-        <button class="chat__close" type="button" aria-label="Close chat"><i class="fa-solid fa-xmark"></i></button>
+        <button class="chat__close" type="button" aria-label="Close chat">Close</button>
       </header>
       <div class="chat__messages" aria-live="polite"></div>
       <div class="chat__chips"></div>
       <form class="chat__form" autocomplete="off">
-        <input class="chat__input" type="text" maxlength="1000" placeholder="Type your question..." aria-label="Your message" />
-        <button class="chat__send" type="submit" aria-label="Send"><i class="fa-solid fa-arrow-up"></i></button>
+        <input class="chat__input" type="text" maxlength="1000" placeholder="Ask about services, work, or pricing" aria-label="Your message" />
+        <button class="chat__send" type="submit">Send</button>
       </form>
       <p class="chat__note">AI replies can be wrong. For quotes, email Jeric directly.</p>
     </section>`;
@@ -146,6 +145,9 @@
   }
 
   launcher.addEventListener('click', () => toggle());
+  document.querySelectorAll('[data-open-chat]').forEach((el) =>
+    el.addEventListener('click', () => toggle(true))
+  );
   root.querySelector('.chat__close').addEventListener('click', () => toggle(false));
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && root.classList.contains('chat--open')) toggle(false);

@@ -1,485 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jeric's Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="premium.css"/>
-  <link rel="stylesheet" href="chat.css"/>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jeric Tabboga — Web developer</title>
+<meta name="description" content="Jeric Tabboga builds websites for local businesses, Shopify stores, and AI tools. Based in the Philippines, working worldwide.">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="chat.css">
 </head>
 <body>
-
-  <!-- NAV -->
-  <nav class="nav">
-    <a href="index.html" class="nav__logo">Jeric Designs<span>.</span></a>
-    <ul class="nav__links">
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href="contact.html" class="nav__cta">Hire Me</a>
-    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
-      <li><a href="about.html" class="mobile-link">About</a></li>
-      <li><a href="services.html" class="mobile-link">Services</a></li>
-      <li><a href="projects.html" class="mobile-link">Projects</a></li>
-      <li><a href="contact.html" class="mobile-link">Contact</a></li>
-    </ul>
-    <a href="contact.html" class="btn btn--primary">Hire Me</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html">Jeric Tabboga</a>
+  <nav class="nav" aria-label="Main"><a href="projects.html">Work</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html" class="cta">Start a project</a></nav>
+  <button class="menu-btn" aria-expanded="false" aria-controls="mnav">Menu</button>
+</div>
+<nav class="mnav" id="mnav" aria-label="Mobile"><a href="projects.html">Work</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+</header>
+<main>
+<section class="intro"><div class="wrap">
+  <p class="eyebrow"><i class="dot"></i> Taking on new projects</p>
+  <h1>
+    <span class="line"><span>I build websites for</span></span>
+    <span class="line"><span>local businesses, <em>and</em></span></span>
+    <span class="line"><span><em>the tools that run them.</em></span></span>
+  </h1>
+  <div class="intro-foot">
+    <div class="a eyebrow"><strong>Jeric Tabboga</strong>Web developer, Philippines (UTC+8)</div>
+    <p class="b">GoHighLevel and custom sites, Shopify stores, and AI tools. Working remotely with clients worldwide.</p>
+    <div class="c"><a class="link" href="#work">See the work ↓</a></div>
   </div>
+</div></section>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero__inner">
-      <!-- Left: Text -->
-      <div class="hero__content">
-        <p class="hero__eyebrow">Available for Freelance</p>
-        <h1 class="hero__title">
-          Web Developer<br>
-          <em>& AI Builder</em><br>
-          for Hire.
-        </h1>
-        <p class="hero__sub">I build websites from scratch, create AI-powered automations and agents, and develop high-converting Shopify stores. All powered by clean code and modern tools.</p>
-        <div class="hero__actions">
-          <a href="#projects" class="btn btn--primary">View My Work</a>
-          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
-          <a href="files/Jeric_Tabboga_Resume.pdf" download class="btn btn--ghost">Download CV ↓</a>
-        </div>
-        <dl class="hero__stats">
-          <div><dt><span data-count="4">4</span>+</dt><dd>Years building</dd></div>
-          <div><dt><span data-count="10">10</span></dt><dd>Featured builds</dd></div>
-          <div><dt>&lt;<span data-count="24">24</span>h</dt><dd>Reply time</dd></div>
-        </dl>
-      </div>
-      <!-- Right: Visual -->
-      <div class="hero__visual">
-        <div class="showcase" aria-hidden="true">
-          <figure class="showcase__card showcase__card--1">
-            <div class="showcase__bar"><i></i><i></i><i></i><span>hansdemolition</span></div>
-            <img src="images/hans1.webp" alt="" loading="eager">
-          </figure>
-          <figure class="showcase__card showcase__card--2">
-            <div class="showcase__bar"><i></i><i></i><i></i><span>thecoolguyshvac</span></div>
-            <img src="images/the-cool-guys-hvac-heating-cooling-vancouver.webp" alt="">
-          </figure>
-          <figure class="showcase__card showcase__card--3">
-            <div class="showcase__bar"><i></i><i></i><i></i><span>timberwolfflooring</span></div>
-            <img src="images/timberwolf-flooring-surrey-langley-bc.webp" alt="">
-          </figure>
-          <div class="showcase__chip"><i class="fa-solid fa-bolt"></i> Built on GoHighLevel</div>
-        </div>
-      </div>
-    </div>
-    <div class="hero__scroll">
-      <span>Scroll</span>
-      <div class="hero__scroll-line"></div>
-    </div>
-  </section>
+<section class="work" id="work"><div class="wrap">
+  <div class="work-head"><h2>Selected work<sup class="num">(09)</sup></h2></div>
+  <div class="index" id="index">
+    <a class="row" data-t="web" data-img="images/screens/hans-1.jpg" href="#feature"><span class="i num">01</span><span class="t">Hans Development</span><span class="m">Website · Vancouver, BC</span><span class="m">Custom home builder</span><span class="s"><i></i><span>Live</span></span></a>
+    <a class="row" data-t="web" data-img="images/screens/glow-aesthetics-1.jpg" href="https://glow-aesthetics-572.pages.dev/" target="_blank" rel="noopener"><span class="i num">02</span><span class="t">Glow Aesthetics</span><span class="m">Website · Oklahoma City</span><span class="m">Med spa</span><span class="s"><i></i><span>Live</span></span></a>
+    <a class="row" data-t="web" data-img="images/screens/khun-camp-1.jpg" href="https://khuncamp.com/" target="_blank" rel="noopener"><span class="i num">03</span><span class="t">Khun Camp</span><span class="m">Website · Creator brand</span><span class="m">Front-end build</span><span class="s"><i></i><span>Live</span></span></a>
+    <a class="row" data-t="web" data-img="images/the-cool-guys-hvac-heating-cooling-vancouver.webp" href="projects.html"><span class="i num">04</span><span class="t">The Cool Guys HVAC</span><span class="m">GoHighLevel · Lower Mainland</span><span class="m">Heating and cooling</span><span class="s"><i></i><span>Live</span></span></a>
+    <a class="row" data-t="web" data-img="images/timberwolf-flooring-surrey-langley-bc.webp" href="projects.html"><span class="i num">05</span><span class="t">Timberwolf Flooring</span><span class="m">GoHighLevel · Surrey, Langley</span><span class="m">Flooring</span><span class="s"><i></i><span>Live</span></span></a>
+    <a class="row" data-t="web" data-img="images/mkb-ventures-commercial-construction-vancouver.webp" href="projects.html"><span class="i num">06</span><span class="t">MKB Ventures</span><span class="m">GoHighLevel · BC, AB, SK</span><span class="m">Commercial construction</span><span class="s"><i></i><span>Live</span></span></a>
+    <a class="row" data-t="shop" data-img="images/ae.png" href="https://allegedly-enlightened.com/" target="_blank" rel="noopener"><span class="i num">07</span><span class="t">Allegedly Enlightened</span><span class="m">Shopify store</span><span class="m">Theme and catalogue</span><span class="s"><i></i><span>Live</span></span></a>
+    <a class="row" data-t="ai" data-img="images/screens/resume-screener-1.jpg" href="https://helterx.github.io/resume-screener" target="_blank" rel="noopener"><span class="i num">08</span><span class="t">Resume Screener</span><span class="m">AI tool</span><span class="m">Scoring and keyword tips</span><span class="s"><i></i><span>Live</span></span></a>
+    <a class="row" data-t="web" data-img="" href="contact.html"><span class="i num">09</span><span class="t">Client site</span><span class="m">Website</span><span class="m">Preview on request</span><span class="s dev"><i></i><span>In development</span></span></a>
+  </div>
+  <div class="work-foot"><a class="link" href="projects.html">All projects →</a></div>
+</div></section>
 
-  <!-- MARQUEE -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__track">
-      <span>GoHighLevel Websites</span><i class="fa-solid fa-star-of-life"></i><span>Shopify Stores</span><i class="fa-solid fa-star-of-life"></i><span>AI Agents</span><i class="fa-solid fa-star-of-life"></i><span>Workflow Automation</span><i class="fa-solid fa-star-of-life"></i><span>Front-End Development</span><i class="fa-solid fa-star-of-life"></i><span>SEO &amp; Performance</span><i class="fa-solid fa-star-of-life"></i><span>Brand &amp; Design</span><i class="fa-solid fa-star-of-life"></i>
-      <span>GoHighLevel Websites</span><i class="fa-solid fa-star-of-life"></i><span>Shopify Stores</span><i class="fa-solid fa-star-of-life"></i><span>AI Agents</span><i class="fa-solid fa-star-of-life"></i><span>Workflow Automation</span><i class="fa-solid fa-star-of-life"></i><span>Front-End Development</span><i class="fa-solid fa-star-of-life"></i><span>SEO &amp; Performance</span><i class="fa-solid fa-star-of-life"></i><span>Brand &amp; Design</span><i class="fa-solid fa-star-of-life"></i>
+<section class="feature" id="feature"><div class="wrap"><div class="grid">
+  <div class="copy rv">
+    <p class="eyebrow">Featured · 01</p>
+    <h2>Hans <em>Development</em></h2>
+    <p>A website for a custom home builder serving Metro Vancouver: services, service areas, a project gallery and a quote request.</p>
+    <dl class="facts">
+      <div><dt>Client</dt><dd>Hans Development</dd></div>
+      <div><dt>Location</dt><dd>Vancouver, BC</dd></div>
+      <div><dt>Type</dt><dd>Website</dd></div>
+    </dl>
+    <a class="link" href="https://hansdevelopment.ca" target="_blank" rel="noopener">Visit hansdevelopment.ca ↗</a>
+  </div>
+  <div class="shots">
+    <figure class="rv"><img src="images/screens/hans-1.jpg" alt="Hans Development homepage hero"><figcaption class="eyebrow"><span>Home</span><span class="num">01</span></figcaption></figure>
+    <div class="two">
+      <figure class="rv"><img src="images/screens/hans-2.jpg" alt="Hans Development services section" loading="lazy"><figcaption class="eyebrow"><span>Services</span><span class="num">02</span></figcaption></figure>
+      <figure class="rv"><img src="images/screens/hans-3.jpg" alt="Hans Development featured project" loading="lazy"><figcaption class="eyebrow"><span>Featured project</span><span class="num">03</span></figcaption></figure>
     </div>
   </div>
+</div></div></section>
 
-  <!-- ABOUT -->
-  <section class="about section" id="about">
-    <div class="container">
-      <div class="about__grid">
-        <div class="about__image-col">
-          <div class="about__img-frame">
-            <div class="about__img-placeholder">
-              <img src="images/dp.png" alt="Your Name" class="about__img">
-            </div>
-            <div class="about__img-accent"></div>
-          </div>
-          <div class="about__stat-card">
-            <span class="stat__num">4+</span>
-            <span class="stat__label">Years Experience</span>
-          </div>
-        </div>
-        <div class="about__text-col">
-          <p class="section__eyebrow">About Me</p>
-          <h2 class="section__title">Crafting Digital Experiences That Convert</h2>
-          <p class="about__body">Hi, I'm <strong>Jeric</strong>, a web developer and AI builder who helps businesses and creators get more done with technology. I build websites from the ground up, craft agentic workflows using Claude AI, automate repetitive tasks, and develop high-converting Shopify stores.</p>
-          <p class="about__body">Whether you need a clean front-end site, a custom AI agent, a Shopify store, or a workflow that runs itself, I combine technical skill with practical problem-solving to deliver real results.</p>
-          <div class="about__tags">
-            <span class="tag">Web Dev</span>
-            <span class="tag">Agentic Coding</span>
-            <span class="tag">Shopify</span>
-            <span class="tag">Automations</span>
-            <span class="tag">HTML/CSS/JS</span>
-            <span class="tag">Claude AI</span>
-          </div>
-          <div style="margin-top: 32px;">
-            <a href="about.html" class="btn btn--primary">Read My Full Story ↗</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="services" id="services"><div class="wrap">
+  <h2 class="rv">What I do</h2>
+  <div class="cols">
+    <article class="rv"><span class="eyebrow num">01</span><h3>Websites</h3><p>Fast, clear sites for local businesses, built on GoHighLevel or in custom code.</p></article>
+    <article class="rv"><span class="eyebrow num">02</span><h3>Shopify</h3><p>Store setup, theme work, product listings and ongoing support.</p></article>
+    <article class="rv"><span class="eyebrow num">03</span><h3>AI and automation</h3><p>Agents and workflows that take repetitive work off your plate.</p></article>
+  </div>
+  <div class="more"><a class="link" href="services.html">All services →</a></div>
+</div></section>
 
-  <!-- SKILLS -->
-  <section class="skills section" id="skills">
-    <div class="container">
-      <p class="section__eyebrow center">What I Do</p>
-      <h2 class="section__title center">My Skills & Services</h2>
-      <div class="skills__grid">
+<section class="why" id="about"><div class="wrap">
+  <div class="steps" style="margin-top:0;border-top:0;padding-top:0">
+    <div class="rv"><b>Discover</b><span>Scope and price, agreed up front.</span></div>
+    <div class="rv"><b>Design</b><span>Layout and copy shaped to your brand.</span></div>
+    <div class="rv"><b>Build</b><span>Forms, booking and automations wired in.</span></div>
+    <div class="rv"><b>Launch</b><span>Tested, fast, and supported after go-live.</span></div>
+  </div>
+  <p style="margin-top:40px"><a class="link" href="about.html">About me →</a></p>
+</div></section>
+</main>
+<footer class="contact" id="contact"><div class="wrap">
+  <p class="eyebrow">Contact</p>
+  <h2>Have a project? <em>Let's talk.</em></h2>
+  <a class="mail" href="mailto:tabbogajeric0811@gmail.com">tabbogajeric0811@gmail.com</a>
+  <div class="alt"><a href="https://wa.me/639293296006" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.linkedin.com/in/jerictabboga/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/HelterX" target="_blank" rel="noopener">GitHub</a><button type="button" data-open-chat>Ask JericBot</button></div>
+  <div class="foot"><span>© 2026 Jeric Tabboga</span><span>Replies within 24 hours</span></div>
+</div></footer>
 
-        <div class="skill-card">
-          <div class="skill-card__icon"><i class="fa-solid fa-code"></i></div>
-          <h3>Web Dev / Front-End</h3>
-          <p>Responsive, pixel-perfect websites built from scratch with HTML, CSS, and JavaScript. No templates, all custom.</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-card__icon"><i class="fa-solid fa-robot"></i></div>
-          <h3>Agentic Coding</h3>
-          <p>Building AI agents and agentic workflows using Claude. From coding assistants to multi-step autonomous tools.</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-card__icon"><i class="fa-solid fa-bag-shopping"></i></div>
-          <h3>Shopify Development</h3>
-          <p>Store setup, theme customization, product listings, and full Shopify VA management. Ready to sell.</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-card__icon"><i class="fa-solid fa-gears"></i></div>
-          <h3>Workflow Automations</h3>
-          <p>Automating repetitive tasks and business processes. Saving time and reducing manual work with smart scripts and tools.</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-card__icon"><i class="fa-solid fa-gauge-high"></i></div>
-          <h3>SEO & Performance</h3>
-          <p>Optimizing websites for speed, search rankings, and better visibility. So your site gets found and loads fast.</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-card__icon"><i class="fa-solid fa-pen-ruler"></i></div>
-          <h3>Design & Canva</h3>
-          <p>Clean UI design, social media graphics, banners, and branded visuals that look professional and on-brand.</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-card__icon"><i class="fa-solid fa-bolt"></i></div>
-          <h3>GoHighLevel Websites</h3>
-          <p>Building fast, professional websites on GoHighLevel using AI-assisted prompts. Perfect for local businesses and service providers.</p>
-        </div>
-
-      </div>
-      <div style="text-align:center; margin-top: 48px;">
-        <a href="services.html" class="btn btn--primary">View All Services ↗</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section class="process section" id="process">
-    <div class="container">
-      <p class="section__eyebrow center">How It Works</p>
-      <h2 class="section__title center">From First Call to Live Site</h2>
-      <ol class="process__list">
-        <li class="process__step">
-          <span class="process__num">01</span>
-          <h3>Discover</h3>
-          <p>We talk through your business, your customers and what the site needs to do. You get a clear scope and price.</p>
-        </li>
-        <li class="process__step">
-          <span class="process__num">02</span>
-          <h3>Design</h3>
-          <p>Layout, copy and visuals shaped around your brand, so it looks like you and not a template.</p>
-        </li>
-        <li class="process__step">
-          <span class="process__num">03</span>
-          <h3>Build</h3>
-          <p>Built on GoHighLevel, Shopify or custom code, with forms, booking and automations wired in.</p>
-        </li>
-        <li class="process__step">
-          <span class="process__num">04</span>
-          <h3>Launch</h3>
-          <p>Tested on every device, optimized for speed and search, then handed over with support after go-live.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="projects section" id="projects">
-    <div class="container">
-      <p class="section__eyebrow center">Portfolio</p>
-      <h2 class="section__title center">Selected Work</h2>
-
-      <div class="projects__filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="web">Web Dev</button>
-        <button class="filter-btn" data-filter="ai">AI / Automation</button>
-        <button class="filter-btn" data-filter="shopify">Shopify</button>
-        <button class="filter-btn" data-filter="ghl">GoHighLevel</button>
-      </div>
-
-      <div class="projects__grid" id="projectsGrid">
-
-        <!-- VISIBLE: First 3 projects -->
-        <div class="project-card" data-category="ghl">
-          <div class="project-card__img">
-            <img src="images/mkb-ventures-commercial-construction-vancouver.webp" alt="MKB Ventures Commercial Construction Vancouver Website Screenshot">
-            <div class="project-card__overlay">
-              <a href="#" class="btn btn--small" target="_blank">View Live ↗</a>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-card__type">GoHighLevel Website</span>
-            <h3>MKB Ventures</h3>
-            <p>A commercial construction website for a trusted general contractor serving BC, Alberta, and Saskatchewan. Restaurant renovations, franchise build-outs, and awning services.</p>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="ghl">
-          <div class="project-card__img">
-            <img src="images/the-cool-guys-hvac-heating-cooling-vancouver.webp" alt="The Cool Guys HVAC Heating and Cooling Vancouver Website Screenshot">
-            <div class="project-card__overlay">
-              <a href="#" class="btn btn--small" target="_blank">View Live ↗</a>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-card__type">GoHighLevel Website</span>
-            <h3>The Cool Guys HVAC</h3>
-            <p>A clean, trust-building website for a Red Seal certified HVAC company serving the Lower Mainland since 2009. Services, rebates, reviews, and 24/7 emergency booking.</p>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="ghl">
-          <div class="project-card__img">
-            <img src="images/timberwolf-flooring-surrey-langley-bc.webp" alt="Timberwolf Flooring Surrey Langley BC Website Screenshot">
-            <div class="project-card__overlay">
-              <a href="#" class="btn btn--small" target="_blank">View Live ↗</a>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-card__type">GoHighLevel Website</span>
-            <h3>Timberwolf Flooring</h3>
-            <p>A premium flooring website for a 20-year trade veteran serving Surrey, Langley, and the Lower Mainland. Laminate, vinyl, hardwood, stairs, and feature walls.</p>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="ghl">
-          <div class="project-card__img">
-            <img src="images/hans1.webp" alt="Hans Demolition & Excavating Website Screenshot">
-            <div class="project-card__overlay">
-              <a href="#" class="btn btn--small" target="_blank">View Live ↗</a>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-card__type">GoHighLevel Website</span>
-            <h3>Hans Demolition & Excavating</h3>
-            <p>A bold, professional website for a family-owned demolition and excavation company serving Metro Vancouver since 1993. Built on GoHighLevel with AI-assisted prompts.</p>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="shopify">
-          <div class="project-card__img">
-            <img src="images/ae.png" alt="Allegedly Enlightened Shopify Store Screenshot">
-            <div class="project-card__overlay">
-              <a href="https://allegedly-enlightened.com/" class="btn btn--small">View Live ↗</a>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-card__type">Shopify Store</span>
-            <h3>Allegedly Enlightened</h3>
-            <p>Built and customized the full Shopify store theme setup, product listings, store content, and layout optimization to create a clean, conversion-focused shopping experience.</p>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="web">
-          <div class="project-card__img">
-            <img src="images/glow-aesthetics.png" alt="Glow Aesthetics Med Spa Website Screenshot">
-            <div class="project-card__overlay">
-              <a href="https://glow-aesthetics-572.pages.dev/" class="btn btn--small" target="_blank">View Live ↗</a>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-card__type">Front-End Website</span>
-            <h3>Glow Aesthetics</h3>
-            <p>A modern, elegant website built for a medical spa. Service listings, membership plans, and a clean design that reflects the brand's premium feel.</p>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="web">
-          <div class="project-card__img">
-            <img src="images/kc.png" alt="Khun Camp Website Screenshot">
-            <div class="project-card__overlay">
-              <a href="https://khuncamp.com/" class="btn btn--small">View Live ↗</a>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-card__type">Client's Front-End Website</span>
-            <h3>Khun Camp Website</h3>
-            <p>Developed a responsive front-end website from scratch using HTML, CSS, and JavaScript. Focused on clean design, smooth navigation, and mobile-friendly layout.</p>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="web">
-          <div class="project-card__img">
-            <img src="images/porchik.png" alt="Personal Project Website Screenshot">
-            <div class="project-card__overlay">
-              <a href="https://github.com/HelterX/Online-Ordering-System" class="btn btn--small">View Live ↗</a>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-card__type">Front-End Ordering System</span>
-            <h3>PorChick Ordering System</h3>
-            <p>Designed a front-page graphic layout concept during the 2019 pandemic, aimed at enabling seamless online ordering so customers could safely shop from home.</p>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="ai">
-          <div class="project-card__img">
-            <img src="images/Resume Screener.png" alt="Resume Screener AI Tool Screenshot">
-            <div class="project-card__overlay">
-              <a href="https://helterx.github.io/resume-screener" class="btn btn--small" target="_blank">View Live ↗</a>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-card__type">AI Tool</span>
-            <h3>Resume Screener</h3>
-            <p>An AI-powered tool that analyzes your resume and gives you an instant quality score, matched keywords, and actionable tips to help you stand out.</p>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="ai">
-          <div class="project-card__img">
-            <img src="images/jericbot.png" alt="JericBot AI Chatbot Screenshot">
-            <div class="project-card__overlay">
-              <a href="https://helterx.github.io/JericBot" class="btn btn--small" target="_blank">View Live ↗</a>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-card__type">AI Chatbot</span>
-            <h3>JericBot</h3>
-            <p>A personal AI assistant chatbot that answers questions about Jeric's services, skills, pricing, and projects. Built from scratch with HTML, CSS, and JavaScript.</p>
-          </div>
-        </div>
-
-
-        <!-- HIDDEN: Add more projects here
-        <div class="project-card project-card--hidden">
-          <div class="project-card__img">
-            <img src="images/khunshawn.png" alt="Khun Shawn Website Screenshot">
-            <div class="project-card__overlay">
-              <a href="https://khun-shawn.com/" class="btn btn--small">View Live ↗</a>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-card__type">Client's Front-End Website</span>
-            <h3>Khun Shawn Website</h3>
-            <p>Managed client communications and appointment scheduling to keep operations running smoothly. Developed a responsive front-end website from scratch using HTML, CSS, and JavaScript, focused on clean design and seamless user experience.</p>
-          </div>
-        </div>
-
-        <div class="project-card project-card--hidden">
-          <div class="project-card__img">
-            <img src="images/porchik.png" alt="Personal Project Website Screenshot">
-            <div class="project-card__overlay">
-              <a href="https://github.com/HelterX/Online-Ordering-System" class="btn btn--small">View Live ↗</a>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-card__type">Personal Projects</span>
-            <h3>Porchick Ordering System</h3>
-            <p>Designed the front-page graphic layout for an online ordering system, creating a visually compelling and intuitive interface that guides customers from landing to checkout.</p>
-          </div>
-        </div>
-
-        <div class="project-card project-card--hidden">
-          <div class="project-card__img">
-            <img src="images/Simpleregform.png" alt="Personal Project Registration Form Screenshot">
-            <div class="project-card__overlay">
-              <a href="https://github.com/HelterX/RegistrationForm" class="btn btn--small">View Live ↗</a>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-card__type">Personal Projects</span>
-            <h3>Registration Form</h3>
-            <p>Built a dynamic registration form using HTML and PHP handling form validation, data submission, and backend processing to securely collect and manage user information.</p>
-          </div>
-        </div>-->
-
-      </div>
-
-      <!-- Toggle Button -->
-      <div class="projects__footer" id="projectsFooter">
-        <a href="projects.html" class="btn btn--primary">View All Projects ↗</a>
-      </div>
-
-    </div>
-  </section>
-
-<!-- CONTACT -->
-<section class="contact section" id="contact">
-  <div class="container">
-    <div class="contact__inner">
-      <p class="section__eyebrow center">Let's Work Together</p>
-      <h2 class="section__title center">Start a Project</h2>
-      <p class="contact__sub">Have a project in mind? I'd love to hear about it. Send me a message and I'll get back to you within 24 hours.</p>
-      <div class="contact__form" id="contactForm">
-        <div class="form__row">
-          <input type="text" id="name" class="form__input" placeholder="Your Name" />
-          <input type="email" id="email" class="form__input" placeholder="Your Email" />
-        </div>
-        <input type="text" id="subject" class="form__input" placeholder="Subject" />
-        <textarea id="message" class="form__input form__textarea" placeholder="Tell me about your project..."></textarea>
-        <button class="btn btn--primary btn--full" id="sendBtn">Send Message ✦</button>
-      </div>
-      <div class="contact__links">
-        <a href="mailto:tabbogajeric0811@gmail.com">
-          <i class="fa-solid fa-envelope"></i> tabbogajeric0811@gmail.com
-        </a>
-        <a href="https://www.linkedin.com/in/jerictabboga/" target="_blank">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="https://github.com/HelterX" target="_blank">
-          <i class="fa-brands fa-github"></i> GitHub
-        </a>
-        <a href="https://wa.me/639293296006" target="_blank">
-          <i class="fa-brands fa-whatsapp"></i> WhatsApp
-        </a>
-      </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2026 <strong>Jeric Tabboga</strong> · Web Developer & AI Builder</p>
-    <p class="footer__sub">Built with HTML, CSS & JS · Hosted on Cloudflare Pages</p>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="hero3d.js"></script>
-  <script src="script.js"></script>
-  <script src="chat.js"></script>
+<div class="peek" id="peek"><img alt=""><div class="ph">Preview on request</div></div>
+<script src="site.js"></script>
+<script src="chat.js"></script>
 </body>
 </html>
