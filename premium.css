@@ -697,3 +697,19 @@ body::after {
 }
 
 .nav__logo, .nav__links a, .nav__cta { white-space: nowrap; }
+
+/* ---------- 3D hero (hero3d.js) ---------- */
+.showcase .hero3d-canvas {
+  position: absolute;
+  inset: -6% -14%;
+  width: 128%;
+  height: 112%;
+  z-index: 0;
+  display: block;
+  touch-action: pan-y;
+}
+.showcase.is-3d .showcase__card { display: none; }
+.showcase.is-3d .showcase__chip { z-index: 4; top: 4%; right: 4%; }
+@media (min-width: 901px) {
+  .hero__visual { align-self: start; margin-top: 8px; }
+}
