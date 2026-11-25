@@ -85,10 +85,38 @@
     });
   }
 
-  function applyFilter(f) {
-    rows.forEach(function (r) { r.classList.toggle('hide', f !== 'all' && r.dataset.t !== f); });
-    doc.querySelectorAll('.card').forEach(function (c) { c.classList.toggle('hide', f !== 'all' && c.dataset.t !== f); });
+  // collapse long lists: show the first N, expand with a button
+  var limit = work ? parseInt(work.dataset.limit, 10) : 0, expanded = false, curFilter = 'all';
+  var moreBtn = doc.getElementById('moreBtn');
+  function applyLimit() {
+    var sets = [rows, [].slice.call(doc.querySelectorAll('.card'))];
+    var total = 0;
+    sets.forEach(function (list, si) {
+      var n = 0;
+      list.forEach(function (el) {
+        var match = curFilter === 'all' || el.dataset.t === curFilter;
+        el.classList.toggle('hide', !match);
+        if (match) { n++; }
+        el.classList.toggle('more', !!limit && !expanded && match && n > limit);
+      });
+      if (si === 0) total = n;
+    });
+    if (moreBtn) {
+      var hidden = !!limit && total > limit;
+      moreBtn.parentNode.hidden = !hidden;
+      moreBtn.setAttribute('aria-expanded', String(expanded));
+      moreBtn.firstChild.textContent = expanded ? 'Show fewer' : 'See all ' + total + ' projects';
+      moreBtn.lastChild.textContent = expanded ? '↑' : '↓';
+    }
   }
+  function applyFilter(f) { curFilter = f; applyLimit(); }
+  if (moreBtn) {
+    moreBtn.addEventListener('click', function () {
+      expanded = !expanded; applyLimit();
+      if (!expanded && work) work.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+  applyLimit();
   doc.querySelectorAll('.tabs[data-filter] button').forEach(function (b) {
     b.addEventListener('click', function () {
       doc.querySelectorAll('.tabs[data-filter] button').forEach(function (o) { o.classList.remove('on'); });
