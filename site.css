@@ -229,3 +229,16 @@ h1 em{font-style:italic;color:var(--bronze);font-weight:300}
   .js .rv{opacity:1;transform:none}
   *{transition-duration:.01ms!important}
 }
+
+/* case study pages */
+.case .feature{border-top:0;padding-top:clamp(32px,5vw,72px)}
+.back{display:inline-block;font-size:13.5px;color:var(--mute);margin-bottom:28px;transition:color .25s}
+.back:hover{color:var(--ink)}
+.feature .links{display:flex;gap:26px;flex-wrap:wrap}
+.next{border-top:1px solid var(--rule);padding:clamp(48px,7vw,96px) 0}
+.next a{display:block;transition:padding .5s var(--ease)}
+.next a:hover{padding-left:12px}
+.next .eyebrow{display:block;margin-bottom:14px}
+.next .nt{font-family:var(--serif);font-weight:300;font-size:clamp(36px,6vw,88px);line-height:1;letter-spacing:-.03em}
+.next .nt em{color:var(--bronze)}
+.next .nm{display:block;margin-top:12px;color:var(--mute);font-size:14px}
