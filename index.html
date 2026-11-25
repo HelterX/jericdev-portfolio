@@ -15,6 +15,8 @@
   <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="premium.css"/>
+  <link rel="stylesheet" href="chat.css"/>
 
 </head>
 <body>
@@ -62,22 +64,28 @@
           <a href="#contact" class="btn btn--ghost">Get in Touch</a>
           <a href="files/Jeric_Tabboga_Resume.pdf" download class="btn btn--ghost">Download CV ↓</a>
         </div>
+        <dl class="hero__stats">
+          <div><dt><span data-count="4">4</span>+</dt><dd>Years building</dd></div>
+          <div><dt><span data-count="10">10</span></dt><dd>Featured builds</dd></div>
+          <div><dt>&lt;<span data-count="24">24</span>h</dt><dd>Reply time</dd></div>
+        </dl>
       </div>
       <!-- Right: Visual -->
       <div class="hero__visual">
-        <div class="hero__bg-text">Jeric</div>
-        <div class="hero__badge">
-          <div class="badge__ring">
-            <svg viewBox="0 0 200 200" class="badge__svg">
-              <path id="circle-text" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
-              <text>
-                <textPath href="#circle-text" startOffset="0%">
-                  AI Agents · Shopify · Front-End · Automations · Web Dev ·&nbsp;
-                </textPath>
-              </text>
-            </svg>
-            <span class="badge__icon">✦</span>
-          </div>
+        <div class="showcase" aria-hidden="true">
+          <figure class="showcase__card showcase__card--1">
+            <div class="showcase__bar"><i></i><i></i><i></i><span>hansdemolition</span></div>
+            <img src="images/hans1.webp" alt="" loading="eager">
+          </figure>
+          <figure class="showcase__card showcase__card--2">
+            <div class="showcase__bar"><i></i><i></i><i></i><span>thecoolguyshvac</span></div>
+            <img src="images/the-cool-guys-hvac-heating-cooling-vancouver.webp" alt="">
+          </figure>
+          <figure class="showcase__card showcase__card--3">
+            <div class="showcase__bar"><i></i><i></i><i></i><span>timberwolfflooring</span></div>
+            <img src="images/timberwolf-flooring-surrey-langley-bc.webp" alt="">
+          </figure>
+          <div class="showcase__chip"><i class="fa-solid fa-bolt"></i> Built on GoHighLevel</div>
         </div>
       </div>
     </div>
@@ -86,6 +94,14 @@
       <div class="hero__scroll-line"></div>
     </div>
   </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>GoHighLevel Websites</span><i class="fa-solid fa-star-of-life"></i><span>Shopify Stores</span><i class="fa-solid fa-star-of-life"></i><span>AI Agents</span><i class="fa-solid fa-star-of-life"></i><span>Workflow Automation</span><i class="fa-solid fa-star-of-life"></i><span>Front-End Development</span><i class="fa-solid fa-star-of-life"></i><span>SEO &amp; Performance</span><i class="fa-solid fa-star-of-life"></i><span>Brand &amp; Design</span><i class="fa-solid fa-star-of-life"></i>
+      <span>GoHighLevel Websites</span><i class="fa-solid fa-star-of-life"></i><span>Shopify Stores</span><i class="fa-solid fa-star-of-life"></i><span>AI Agents</span><i class="fa-solid fa-star-of-life"></i><span>Workflow Automation</span><i class="fa-solid fa-star-of-life"></i><span>Front-End Development</span><i class="fa-solid fa-star-of-life"></i><span>SEO &amp; Performance</span><i class="fa-solid fa-star-of-life"></i><span>Brand &amp; Design</span><i class="fa-solid fa-star-of-life"></i>
+    </div>
+  </div>
 
   <!-- ABOUT -->
   <section class="about section" id="about">
@@ -132,43 +148,43 @@
       <div class="skills__grid">
 
         <div class="skill-card">
-          <div class="skill-card__icon">💻</div>
+          <div class="skill-card__icon"><i class="fa-solid fa-code"></i></div>
           <h3>Web Dev / Front-End</h3>
           <p>Responsive, pixel-perfect websites built from scratch with HTML, CSS, and JavaScript. No templates, all custom.</p>
         </div>
 
         <div class="skill-card">
-          <div class="skill-card__icon">🤖</div>
+          <div class="skill-card__icon"><i class="fa-solid fa-robot"></i></div>
           <h3>Agentic Coding</h3>
           <p>Building AI agents and agentic workflows using Claude. From coding assistants to multi-step autonomous tools.</p>
         </div>
 
         <div class="skill-card">
-          <div class="skill-card__icon">🛍️</div>
+          <div class="skill-card__icon"><i class="fa-solid fa-bag-shopping"></i></div>
           <h3>Shopify Development</h3>
           <p>Store setup, theme customization, product listings, and full Shopify VA management. Ready to sell.</p>
         </div>
 
         <div class="skill-card">
-          <div class="skill-card__icon">⚙️</div>
+          <div class="skill-card__icon"><i class="fa-solid fa-gears"></i></div>
           <h3>Workflow Automations</h3>
           <p>Automating repetitive tasks and business processes. Saving time and reducing manual work with smart scripts and tools.</p>
         </div>
 
         <div class="skill-card">
-          <div class="skill-card__icon">🚀</div>
+          <div class="skill-card__icon"><i class="fa-solid fa-gauge-high"></i></div>
           <h3>SEO & Performance</h3>
           <p>Optimizing websites for speed, search rankings, and better visibility. So your site gets found and loads fast.</p>
         </div>
 
         <div class="skill-card">
-          <div class="skill-card__icon">🎨</div>
+          <div class="skill-card__icon"><i class="fa-solid fa-pen-ruler"></i></div>
           <h3>Design & Canva</h3>
           <p>Clean UI design, social media graphics, banners, and branded visuals that look professional and on-brand.</p>
         </div>
 
         <div class="skill-card">
-          <div class="skill-card__icon">⚡</div>
+          <div class="skill-card__icon"><i class="fa-solid fa-bolt"></i></div>
           <h3>GoHighLevel Websites</h3>
           <p>Building fast, professional websites on GoHighLevel using AI-assisted prompts. Perfect for local businesses and service providers.</p>
         </div>
@@ -177,6 +193,36 @@
       <div style="text-align:center; margin-top: 48px;">
         <a href="services.html" class="btn btn--primary">View All Services ↗</a>
       </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process section" id="process">
+    <div class="container">
+      <p class="section__eyebrow center">How It Works</p>
+      <h2 class="section__title center">From First Call to Live Site</h2>
+      <ol class="process__list">
+        <li class="process__step">
+          <span class="process__num">01</span>
+          <h3>Discover</h3>
+          <p>We talk through your business, your customers and what the site needs to do. You get a clear scope and price.</p>
+        </li>
+        <li class="process__step">
+          <span class="process__num">02</span>
+          <h3>Design</h3>
+          <p>Layout, copy and visuals shaped around your brand, so it looks like you and not a template.</p>
+        </li>
+        <li class="process__step">
+          <span class="process__num">03</span>
+          <h3>Build</h3>
+          <p>Built on GoHighLevel, Shopify or custom code, with forms, booking and automations wired in.</p>
+        </li>
+        <li class="process__step">
+          <span class="process__num">04</span>
+          <h3>Launch</h3>
+          <p>Tested on every device, optimized for speed and search, then handed over with support after go-live.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
@@ -432,5 +478,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="chat.js"></script>
 </body>
 </html>

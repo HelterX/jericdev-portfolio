@@ -2,15 +2,21 @@
 //  NAV — shrink on scroll
 // =============================================
 const nav = document.querySelector('.nav');
+const progress = document.createElement('div');
+progress.className = 'scroll-progress';
+document.body.appendChild(progress);
+
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 60);
-});
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  progress.style.transform = `scaleX(${max > 0 ? Math.min(window.scrollY / max, 1) : 0})`;
+}, { passive: true });
 
 // =============================================
 //  SCROLL REVEAL (skip hidden project cards)
 // =============================================
 const revealEls = document.querySelectorAll(
-  '.skill-card, .project-card:not(.project-card--hidden), .about__grid, .contact__inner, .section__title, .section__eyebrow'
+  '.skill-card, .value-card, .service-block, .contact-info-item, .project-card:not(.project-card--hidden), .about__grid, .contact__inner, .section__title, .section__eyebrow'
 );
 
 revealEls.forEach(el => el.classList.add('reveal'));
@@ -18,7 +24,7 @@ revealEls.forEach(el => el.classList.add('reveal'));
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      const delay = entry.target.closest('.skills__grid, .projects__grid')
+      const delay = entry.target.closest('.skills__grid, .projects__grid, .value-grid')
         ? Array.from(entry.target.parentElement.children).indexOf(entry.target) * 80
         : 0;
       setTimeout(() => entry.target.classList.add('visible'), delay);
@@ -196,3 +202,83 @@ if (toggleBtn) {
     }
   });
 }
+// =============================================
+//  PREMIUM INTERACTIONS
+// =============================================
+const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+// Hero spotlight follows the cursor
+const heroEl = document.querySelector('.hero');
+if (heroEl && finePointer && !prefersReduced) {
+  const spot = document.createElement('div');
+  spot.className = 'hero__spot';
+  heroEl.prepend(spot);
+  heroEl.addEventListener('mousemove', (e) => {
+    const r = heroEl.getBoundingClientRect();
+    heroEl.style.setProperty('--mx', `${e.clientX - r.left}px`);
+    heroEl.style.setProperty('--my', `${e.clientY - r.top}px`);
+  });
+}
+
+// Cursor-aware light on cards
+if (finePointer) {
+  document.querySelectorAll('.skill-card, .project-card').forEach((card) => {
+    card.addEventListener('mousemove', (e) => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--px', `${e.clientX - r.left}px`);
+      card.style.setProperty('--py', `${e.clientY - r.top}px`);
+    });
+  });
+}
+
+// Magnetic buttons
+if (finePointer && !prefersReduced) {
+  document.querySelectorAll('.btn--primary, .nav__cta').forEach((btn) => {
+    btn.addEventListener('mousemove', (e) => {
+      const r = btn.getBoundingClientRect();
+      const x = (e.clientX - r.left - r.width / 2) * 0.18;
+      const y = (e.clientY - r.top - r.height / 2) * 0.3;
+      btn.style.transform = `translate(${x}px, ${y - 2}px)`;
+    });
+    btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+  });
+}
+
+// Count-up numbers
+const counters = document.querySelectorAll('[data-count]');
+if (counters.length) {
+  const countObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const end = Number(el.dataset.count);
+      countObserver.unobserve(el);
+      if (prefersReduced) { el.textContent = end; return; }
+      const start = performance.now();
+      const dur = 1400;
+      const tick = (now) => {
+        const t = Math.min((now - start) / dur, 1);
+        el.textContent = Math.round(end * (1 - Math.pow(1 - t, 3)));
+        if (t < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    });
+  }, { threshold: 0.6 });
+  counters.forEach((c) => countObserver.observe(c));
+}
+
+// Featured (wide) first project card when showing "All"
+function updateFeatured() {
+  const grid = document.getElementById('projectsGrid');
+  if (!grid) return;
+  const active = document.querySelector('.filter-btn.active');
+  const showingAll = !active || active.dataset.filter === 'all';
+  grid.querySelectorAll('.project-card').forEach((c) => c.classList.remove('is-featured'));
+  if (showingAll) {
+    const first = grid.querySelector('.project-card:not(.hidden):not(.project-card--hidden)');
+    if (first) first.classList.add('is-featured');
+  }
+}
+updateFeatured();
+document.querySelectorAll('.filter-btn').forEach((b) => b.addEventListener('click', updateFeatured));
